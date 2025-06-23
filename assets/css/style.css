@@ -1,0 +1,65 @@
+/* Core Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+photo-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.photo-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+.photo-thumbnail-container {
+    height: 300px;
+    overflow: hidden;
+}
+
+.photo-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.user-avatar {
+    object-fit: cover;
+}
+
+/* Rating buttons */
+.btn-outline-danger.active {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-primary.active {
+    background-color: #be100d;
+    color: white;
+}
+
+.btn-outline-success.active {
+    background-color: #198754;
+    color: white;
+}
+
+/* Slider styling */
+.slider-value {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: right;
+}
